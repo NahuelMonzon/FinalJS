@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
    
     const renderProducts = async () => {
         try {
-            const response = await fetch('/data/products.json');
+            const response = await fetch('./data/products.json');
             products = await response.json();
             
             const productsContainer = document.querySelector('.products');
