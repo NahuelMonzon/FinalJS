@@ -87,7 +87,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.querySelector('#finalize-order').addEventListener('click', () => {
-        alert('¡Gracias por tu compra!');
+        Swal.fire({
+            title: "Compra finalizada",
+            text: "Que disfrutes tu comida!!",
+            icon: "success"
+          });
         cartItems.length = 0;
         renderCart();
     });
